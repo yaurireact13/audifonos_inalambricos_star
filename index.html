@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Audifonos</title>
+   <!-- Enlace a Bootstrap 5 -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Enlace a archivo de estilos personalizados -->
+   <link rel="stylesheet" href="css/styles.css">
+   <!-- Icono de la página -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- google Fonts -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+
+<body>
+   <!-- Cabecera de la página -->
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+              <img src="images/logo/black_on_trans.png" alt="Logo" class="imagen_logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="products.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contacto</a>
+                  </li>
+              </ul>
+              <form class="d-flex align-items-center">
+                  <div class="login_bt me-3">
+                      <ul class="d-flex list-unstyled mb-0">
+                          <li class="me-3">
+                              <a id="login-link" href="#" class="nav-link">
+                                  <span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>Iniciar sesión
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html" class="nav-link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                          </li>
+                      </ul>
+                  </div>
+              </form>
+          </div>
+      </nav>
+  </header>
+   <!-- Contenido principal de la página -->
+   <main>
+
+      <!--slider principal de la página-->
+      <section class="slider_principal">
+         <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="images/slider-client-1.png" class="d-block w-100" alt="Slide 1">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h5>Primera etiqueta del slide</h5>
+                     <p>Contenido representativo para el primer slide.</p>
+                     <a href="products.html" class="btn btn-info">Ver más</a> <!-- Botón dinámico -->
+                  </div>
+               </div>
+               <div class="carousel-item" data-bs-interval="2000">
+                  <img src="images/slider-client-2.png" class="d-block w-100" alt="Slide 2">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h5>Segunda etiqueta del slide</h5>
+                     <p>Contenido representativo para el segundo slide, agregue más detalles aquí.</p>
+                     <a href="products.html" class="btn btn-info">Ver más</a> <!-- Botón dinámico -->
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img src="images/slider-client-3.png" class="d-block w-100" alt="Slide 3">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h5>Tercera etiqueta del slide</h5>
+                     <p>Descripción más detallada del tercer slide, más contenido dinámico.</p>
+                     <a href="products.html" class="btn btn-info">Ver más</a> <!-- Botón dinámico -->
+                  </div>
+               </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+               data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+               data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Siguiente</span>
+            </button>
+         </div>
+      </section>
+
+      <!-- Sección de presentación -->
+      <section class="presentation">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6 text-center text-md-start">
+                  <h1 class="title">Audífonos de alta calidad</h1>
+                  <p class="description">Descubre nuestros audífonos de alta calidad y experimenta la música como nunca antes.
+                     Perfectos para cualquier ocasión, desde una tranquila tarde en casa hasta tus aventuras al aire libre.
+                  </p>
+      
+                  <h3 class="features-title">Características destacadas:</h3>
+                  <ul class="features-list">
+                     <li>Sonido envolvente y nítido</li>
+                     <li>Diseño ergonómico para largas horas de uso</li>
+                     <li>Conectividad Bluetooth y con cable</li>
+                     <li>Batería de larga duración</li>
+                     <li>Compatible con todos los dispositivos</li>
+                  </ul>
+      
+                  <a href="products.html" class="btn btn-primary">Ver productos</a>
+               </div>
+               <div class="col-md-6 text-center">
+                  <img src="images/presentacion_cliente_1.webp" alt="Imagen de presentación" class="presentation-img">
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Sección de productos -->
+      <section class="products">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h2 class="title">Nuestros productos</h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="product">
+                     <img src="images/audifono_1.png" alt="Imagen de producto 1">
+                     <h3 class="product-title">Audífono Bluetooth</h3>
+                     <p class="product-description">Auriculares profesionales con Bluetooth y tecnología avanzada de
+                        sonido.
+                     </p>
+                     <button class="btn btn-primary" data-producto="Audífono Bluetooth" data-antes="200.00"
+                        data-ahora="150.00" data-imagen="images/audifono_1.png"
+                        data-contenido="Auriculares profesionales con Bluetooth y tecnología avanzada de sonido.">Ver
+                        detalles</button>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="product">
+                     <img src="images/audifono_2.png" alt="Imagen de producto 2">
+                     <h3 class="product-title">Audífono Cable</h3>
+                     <p class="product-description">Auriculares con cable y excelente calidad de sonido para todo tipo
+                        de
+                        dispositivos.</p>
+                     <button class="btn btn-primary" data-producto="Audífono Cable" data-antes="100.00"
+                        data-ahora="75.00" data-imagen="images/audifono_2.png" data-contenido="Auriculares con cable y excelente calidad de sonido para todo tipo de
+                     dispositivos.">Ver detalles</button>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="product">
+                     <img src="images/audifono_3.png" alt="Imagen de producto 3">
+                     <h3 class="product-title">Audífono LED</h3>
+                     <p class="product-description">Auriculares plegables con orejas de gato y luces LED, perfectos para
+                        regalar.</p>
+                     <button class="btn btn-primary" data-producto="Audífono LED" data-antes="250.00"
+                        data-ahora="180.00" data-imagen="images/audifono_3.png" data-contenido="Auriculares plegables con orejas de gato y luces LED, perfectos para
+                     regalar.">Ver detalles</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Sección de detalles del producto -->
+      <section id="detalles-producto" style="display:none;" class="detalles-producto mt-5">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="detalle-imagen-container">
+                     <img id="detalle-imagen" src="" alt="Imagen del producto" class="img-fluid detalle-imagen">
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <h3 id="detalle-producto"></h3>
+                  <p>Antes: S/. <span id="detalle-antes"></span></p>
+                  <p>Ahora: S/. <span id="detalle-ahora"></span></p>
+                  <p id="detalle-descripcion">Audífono Bluetooth: Aquí una descripción más detallada del producto
+                     seleccionado, explicando sus características, beneficios, y lo que lo hace especial.</p>
+                  <button class="btn btn-success" id="comprar-ahora-btn">Comprar ahora</button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Modal -->
+      <div id="modal-tienda" class="modal">
+         <div class="modal-content">
+            <span class="close" id="cerrar-modal">&times;</span>
+            <div class="modal-header">
+               <h2>Confirmar Compra</h2>
+            </div>
+            <div class="modal-body">
+               <p>Serás dirigido a la tienda para completar tu compra.</p>
+            </div>
+            <div class="modal-footer">
+               <button id="confirmar-compra-btn">Confirmar</button>
+            </div>
+         </div>
+      </div>
+
+   </main>
+
+   <!-- Pie de página -->
+
+   <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+         <!-- Left -->
+         <div class="me-5 d-none d-lg-block">
+            <span>Síguenos en las redes sociales:</span>
+         </div>
+         <!-- Right -->
+         <div>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" class="me-4 text-reset">
+               <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="me-4 text-reset">
+               <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/yaurireact13" class="me-4 text-reset">
+               <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://open.spotify.com/intl-es" class="me-4 text-reset">
+               <i class="fab fa-spotify" aria-hidden="true"></i>
+            </a>
+         </div>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links -->
+      <section class="p-4">
+         <div class="container text-center text-md-start">
+            <div class="row mt-3">
+               <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4">
+                     <a href="index.html" style="text-decoration: none;"><i class="fa fa-headphones" aria-hidden="true"></i>
+                     Star</a>
+                  </h6>
+                  <p>
+                     Puedes seguirnos en nuestras diferentes plataformas
+                  </p>
+               </div>
+               <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4">Contáctanos</h6>
+                  <p><i class="fas fa-home me-3"></i> Perú, Lima La molina 453</p>
+                  <p><i class="fas fa-envelope me-3"></i> yaurileonjob@gmail.com</p>
+                  <p><i class="fas fa-phone" aria-hidden="true"></i> + 51 921 876 815</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Section: Links -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+         © 2024 Derechos reservados:
+         <a class="text-reset fw-bold" href="https://github.com/yaurireact13">YauriReact</a>
+      </div>
+      <!-- Copyright -->
+   </footer>
+
+   <!-- Scripts -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Bootstrap CSS -->
+   <script src="js/modal.js"></script>
+   <script src="js/login.js"></script>
+   <!-- Scripts-->
+</body>
+
+</html>

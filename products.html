@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Productos</title>
+   <!-- Enlace a Bootstrap 5 -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+   <!-- Enlace a archivo de estilos personalizados -->
+   <link rel="stylesheet" href="css/styles.css">
+   <!-- Icono de la página -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- google Fonts -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+
+<body>
+   <!-- Cabecera de la página -->
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="index.html">
+            <img src="images/logo/black_on_trans.png" alt="Logo">
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="products.html">Productos</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="noticias.html">Noticias</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contacto</a>
+               </li>
+            </ul>
+            <form class="d-flex align-items-center">
+               <div class="login_bt me-3">
+                  <ul class="d-flex list-unstyled mb-0">
+                     <li class="me-3">
+                        <a href="#" class="nav-link">
+                           <span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>Iniciar sesión
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="nav-link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                     </li>
+                  </ul>
+               </div>
+            </form>
+         </div>
+      </nav>
+   </header>
+   <!-- Contenido principal de la página -->
+   <main>
+      <!-- Sección de productos-->
+      <section class="products_section layout_padding">
+         <div class="container text-center">
+            <h1 class="products_title">Nuestros productos</h1>
+         </div>
+      
+         <div class="container-fluid">
+            <div class="products_grid">
+               <!-- Producto 1 -->
+               <div class="product_card">
+                  <div class="product_image">
+                     <img src="images/producto-client-1.png" alt="Audífono 1">
+                  </div>
+                  <h3 class="product_title">Audífono Bluetooth</h3>
+                  <p class="product_description">Experiencia de sonido envolvente.</p>
+                  <button class="btn btn-primary" onclick="openModal(1)">Ver detalles</button>
+               </div>
+      
+               <!-- Producto 2 -->
+               <div class="product_card">
+                  <div class="product_image">
+                     <img src="images/producto-client-2.png" alt="Audífono 2">
+                  </div>
+                  <h3 class="product_title">Audífono Cable</h3>
+                  <p class="product_description">Bajos potentes y claridad de sonido.</p>
+                  <button class="btn btn-primary" onclick="openModal(2)">Ver detalles</button>
+               </div>
+      
+               <!-- Producto 3 -->
+               <div class="product_card">
+                  <div class="product_image">
+                     <img src="images/producto-client-3.png" alt="Audífono 3">
+                  </div>
+                  <h3 class="product_title">Audífono Bluetooth</h3>
+                  <p class="product_description">Comodidad y calidad para largas sesiones.</p>
+                  <button class="btn btn-primary" onclick="openModal(3)">Ver detalles</button>
+               </div>
+            </div>
+         </div>
+      </section>
+<!-- Modal -->
+<div id="productModal" class="modal">
+   <div class="modal_content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal_body"></div>
+   </div>
+</div>
+<!-- Pie de página -->
+
+<footer class="text-center text-lg-start bg-light text-muted">
+   <!-- Section: Social media -->
+   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+     <!-- Left -->
+     <div class="me-5 d-none d-lg-block">
+       <span>Síguenos en las redes sociales:</span>
+     </div>
+     <!-- Right -->
+     <div>
+      <a href="https://web.facebook.com/?_rdc=1&_rdr" class="me-4 text-reset">
+         <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/" class="me-4 text-reset">
+         <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/yaurireact13" class="me-4 text-reset">
+         <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="https://open.spotify.com/intl-es" class="me-4 text-reset">
+         <i class="fab fa-spotify" aria-hidden="true"></i>
+      </a>
+   </div>
+   </section>
+   <!-- Section: Social media -->
+ 
+   <!-- Section: Links -->
+   <section class="p-4">
+     <div class="container text-center text-md-start">
+       <div class="row mt-3">
+         <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+           <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fa fa-headphones" aria-hidden="true"></i>
+            Star
+           </h6>
+           <p>
+             Puedes seguirnos en nuestras diferentes plataformas
+           </p>
+         </div>
+         <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+           <h6 class="text-uppercase fw-bold mb-4">Contáctanos</h6>
+           <p><i class="fas fa-home me-3"></i> Perú, Lima La molina 453</p>
+           <p><i class="fas fa-envelope me-3"></i> yaurileonjob@gmail.com</p>
+           <p><i class="fas fa-phone" aria-hidden="true"></i> + 51 921 876 815</p>
+         </div>
+       </div>
+     </div>
+   </section>
+   <!-- Section: Links -->
+ 
+   <!-- Copyright -->
+   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+     © 2024 Derechos reservados:
+     <a class="text-reset fw-bold" href="https://github.com/yaurireact13">YauriReact</a>
+   </div>
+   <!-- Copyright -->
+ </footer>
+   <!-- Scripts -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="js/scripts.js"></script>
+</body>
+
+</html>
